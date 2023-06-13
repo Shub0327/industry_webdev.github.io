@@ -38,10 +38,10 @@
   }
 }*/
 
-.page-header {
+/*.page-header {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/header.jpg), no-repeat center center;
   background-size: cover;
-}
+}*/
 
 
 body {
@@ -678,7 +678,7 @@ section {
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
-.breadcrumbs {
+/*.breadcrumbs {
   padding: 20px 0;
   background-color: #ecf8f9;
   min-height: 40px;
@@ -735,7 +735,7 @@ section {
   .breadcrumbs ol li {
     display: inline-block;
   }
-}
+}*/
 
 /*--------------------------------------------------------------
 # Featured Services

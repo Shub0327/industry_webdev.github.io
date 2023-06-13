@@ -10,7 +10,7 @@
 # General
 --------------------------------------------------------------*/
 
-
+/*
 .jumbotron {
     padding: 1rem 1rem;
     margin-bottom: 0.3rem;
@@ -23,7 +23,7 @@
         padding: 1rem 2rem;
     }
 }
-
+*/
 
 body {
     font-family: "Open Sans", sans-serif;
@@ -456,18 +456,19 @@ h6 {
 .content {
     position: relative;
     width: 90%;
-    height: 400px;
+    height: 420px;
     max-width: 400px;
     margin: auto;
     overflow: hidden;
-    box-shadow: 3px 3px #888888;
+    box-shadow: 2px 2px #888888;
     border-radius: 10px;
 }
 
 .content .content-overlay {
     background: rgba(255, 51, 0, 0.811);
-    position: absolute;
-    height: 99%;
+    position: relative;
+    height: 100%;
+
     width: 100%;
     left: 0;
     top: 0;
@@ -501,8 +502,10 @@ img {
 .content-details {
     position: absolute;
     text-align: center;
+    padding-top: 2em;
     padding-left: 1em;
     padding-right: 1em;
+    padding-bottom: 1em;
     width: 100%;
     top: 50%;
     left: 50%;

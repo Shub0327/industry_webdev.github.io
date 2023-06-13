@@ -12,23 +12,24 @@
 
 
 .jumbotron {
- /* padding: 1rem 1rem;*/
- /* margin-bottom: 0.3rem;
+  padding: 1rem 1rem;
+  margin-bottom: 0.3rem;
   background-color: #e9ecef;
-  border-radius: 0.3rem;*/
+  border-radius: 0.3rem;
+
 }
-/*@media (min-width: 576px) {
+@media (min-width: 576px) {
   .jumbotron {
     padding: 1rem 2rem;
   }
-}*/
+}
 
-/*.jumbotron-fluid {
+.jumbotron-fluid {
   padding-right: 0;
   padding-left: 0;
   border-radius: 0;
-}*/
-/*@media (min-width:592px) {
+}
+@media (min-width:592px) {
   .navbar-light {
     border-radius: 60px;
   }
@@ -36,10 +37,11 @@
   .page-header {
     margin-top: 5px;
   }
-}*/
+}
 
 .page-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/header.jpg), no-repeat center center;
+  height: ;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/cover.jpg), no-repeat center center;
   background-size: cover;
 }
 
@@ -677,15 +679,15 @@ section {
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
-  padding: 30px 0;
+  padding: 20px 0;
   background-color: #ecf8f9;
-  min-height: 20px;
-  margin-top: 120px;
+  min-height: 40px;
+  margin-top: 50px;
 }
 
 @media (max-width: 992px) {
   .breadcrumbs {
-    margin-top: 60px;
+    margin-top: 70px;
   }
 }
 

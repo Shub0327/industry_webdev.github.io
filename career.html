@@ -27,6 +27,7 @@
       
         <!-- Template Main CSS File -->
         <link href="assets/css/career.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
       
         <!-- =======================================================
         * Template Name: Medicio
@@ -100,16 +101,40 @@
     </div>
   </header>
   <!-- End Header -->
+  <main id="main">
 
-  <div class="jumbotron jumbotron-fluid page-header" style=" margin-top: 100px;">
-    <div class="container py-3">
-        <h1 class="text-black  mt-lg-5">Career</h1>
-        <div class="d-inline-flex align-items-center text-black">
-            
-            <p class="m-0 py-1 ">We are keen that you make a soild foundation for your future by gaining critical experience on cutting-edge technology projects. It's another efforts in our endeavour to be an employer of choice</p>
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+      <!--     <h2></h2> -->
+         <!--  <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Inner Page</li>
+          </ol> -->
+        </div>
+
+      </div>
+    </section>
+    <!-- End Breadcrumbs Section -->
+
+
+
+   <!-- Header Start -->
+    <div class="jumbotron jumbotron-fluid page-header" style="margin-bottom: 20px;">
+        <div class="container text-center py-5">
+            <h1 class="text-white display-3 mt-lg-5">Career</h1>
+            <div class="d-inline-flex align-items-center text-white">
+                
+                <p class="m-0">We are keen that you make a soild foundation for your future by gaining critical experience on cutting-edge technology projects. It's another efforts in our endeavour to be an employer of choice</p>
+            </div>
         </div>
     </div>
-</div>
+    <!-- Header End -->
+
+
+
 
 <!-- ======= Gallery Section ======= -->
 <section id="gallery" class="gallery">
@@ -279,43 +304,72 @@
       <div class="pt-5 pt-lg-2 content" data-aos="fade-up">
           <h5 class="text-black pt-4 fw-normal">If you are interested in joining our high pace and fast-growing team, please send your resume to <strong class="email-txt">career@bhumistha.com</strong> specifying your particular
             interest and desired location. We will review your resume to find the most attractive career path within our global organization.</h5>
-            
-            <div class="container">
-              <form>
-                <div class="row py-4">
-                  <div class="col">
-                    <label for="inputName">Enter Full Name*</label>
-                    <input type="text" class="form-control form-control-lg" placeholder="Your Name">
-                  </div>
-                  <div class="col">
-                    <label for="inputPhone">Enter Phone Number*</label>
-                    <input type="text" class="form-control form-control-lg" placeholder="Your Phone">
-                  </div>
-                  <div class="col">
-                    <label for="inputEmail">Enter Email*</label>
-                    <input type="text" class="form-control form-control-lg" placeholder="Your Email">
-                  </div>
+
+
+
+<section id="contact" class="contact">
+      <div class="container">
+
+
+             <div class="col-xs-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
                 </div>
-                <div class="row pb-4">
-                  <div class="col-md-4">
-                    <label for="inputPosition">Select Position to Apply</label>
-                    <select id="inputState" class="form-control form-control-lg">
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+                </div>
+
+              </div>
+             <!--  <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
+              </div> -->
+              &nbsp
+                <div class="row  ">
+
+                  <div class="col-sm-6 form-group"><label class="form-control" for="inputPosition">Select Position to Apply</label>
+                    <select id="inputState" class="form-control">
                       <option selected>SELECT</option>
                       <option>Internship</option>
                       <option>Fresher</option>
                       <option>Senior</option>
                     </select>
+                    &nbsp
                   </div>
-                  <div class="col-md-4">
-                    <label for="inputResume">Upload Your Resume*</label>
-                    <input type="file" class="form-control form-control-lg" placeholder="Your Email*">
-                  </div>
+
+<div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="Number" class="form-control" name="phone" id="phone" placeholder="Your Phone" required="">
+                   &nbsp
                 </div>
-              </form>
-            </div>
+    <div class=" form-group col-md-6" > <label class="form-control" for="inputResume">Upload Your Resume*</label>
+                    <input type="file" class="" placeholder="Your Email*"></div>
 
 
-          <button class="btn btn-primary border-0 btn-lg" type="submit">SUBMIT</button>
+
+
+                
+                
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="7" placeholder="Message" required=""></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+
+   </div>
+    </section>
+
+
+
+<!-- 
+          <button class="btn btn-primary border-0 btn-lg" type="submit">SUBMIT</button> -->
        </div>
    </div>
    </div>
