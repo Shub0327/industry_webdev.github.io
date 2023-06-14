@@ -1705,6 +1705,138 @@ transition: color 0.3s;
   }
 }
 
+
+/*--------------------------------------------------------------
+# AboutUs-Teams
+--------------------------------------------------------------*/
+#team {
+  background-color: #0a0038;
+}
+
+
+@media (max-width:767px) {
+  h2 {
+  margin-bottom:25px;
+  padding-top:25px;
+  font-size:24px;
+  }
+  }
+  
+  .intro {
+  font-size:16px;
+  max-width:500px;
+  margin:0 auto;
+  }
+  .intro p {
+  margin-bottom:0;
+  }
+  
+  .people {
+  padding:50px 0;
+  cursor: pointer;
+  }
+  .item {
+  margin-bottom:30px;
+  }
+  
+  .item .box {
+  text-align:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  height:280px;
+  position:relative;
+  overflow:hidden;
+  border-radius: 8px;
+  }
+  
+  .item .cover {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(31,148,255,0.75);
+  transition:opacity 0.15s ease-in;
+  opacity:0;
+  margin-top:200px;
+  color:#fff;
+  text-shadow:1px 1px 1px rgba(0,0,0,0.15);
+  }
+  
+  .item:hover .cover {
+  opacity:1;
+  }
+  
+  .item .name {
+  font-weight:bold;
+  margin-bottom:8px;
+  }
+  
+  .item .title {
+  text-transform:uppercase;
+  font-weight:bold;
+  color:#bbd8fb;
+  letter-spacing:2px;
+  font-size:13px;
+  margin-bottom:20px;
+  }
+  
+  .social {
+  font-size:18px;
+  }
+  
+  .social a {
+  color:inherit;
+  margin:0 10px;
+  display:inline-block;
+  opacity:0.7;
+  }
+  .social a:hover {
+  opacity:1;
+  }
+
+  
+/*--------------------------------------------------------------
+# Clients
+--------------------------------------------------------------*/
+.container {
+  overflow: hidden;
+  .slider {
+    animation: slidein 30s linear infinite;
+    white-space: nowrap;
+    .logos {
+      width: 100%;
+      display: inline-block;
+      margin: 0px 0;
+      .fab {
+        width: calc(100% / 5);
+        animation: fade-in 0.5s 
+          cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+      }
+    }
+  }
+}
+
+@keyframes slidein {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
