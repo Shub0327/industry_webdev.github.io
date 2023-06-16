@@ -1802,21 +1802,24 @@ transition: color 0.3s;
 --------------------------------------------------------------*/
 /*.container {
   overflow: hidden;
+  */
   .slider {
     animation: slidein 30s linear infinite;
     white-space: nowrap;
+  }
     .logos {
       width: 100%;
       display: inline-block;
       margin: 0px 0;
+    }
       .fab {
         width: calc(100% / 5);
         animation: fade-in 0.5s 
           cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
       }
-    }
-  }
-}*/
+    
+  
+
 
 @keyframes slidein {
   from {
