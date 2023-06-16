@@ -1800,7 +1800,7 @@ transition: color 0.3s;
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
-.container {
+/*.container {
   overflow: hidden;
   .slider {
     animation: slidein 30s linear infinite;
@@ -1816,7 +1816,7 @@ transition: color 0.3s;
       }
     }
   }
-}
+}*/
 
 @keyframes slidein {
   from {
