@@ -10,6 +10,12 @@
 # General
 --------------------------------------------------------------*/
 
+.str {
+  font-weight:bold;
+  font-size:18px;
+  line-height:22px;
+ /* border:1px solid #000000;*/
+}
 
 .jumbotron {
   padding: 1rem 1rem;
@@ -63,13 +69,16 @@ a:hover {
 
 h1,
 h2,
-h3,
+
 h4,
 h5,
 h6 {
   font-family: "Roboto", sans-serif;
 }
-
+h3{
+  font-weight:bold;
+  font-family: "Roboto", sans-serif;
+}
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
