@@ -2014,7 +2014,7 @@ pre code {
 
 @media (min-width:1200px) {
     .container {
-        width: 1170px
+        width: 1480px
     }
 }
 
@@ -5255,19 +5255,6 @@ textarea.input-group-sm>.input-group-btn>.btn {
     margin-top: -1px;
     border-top-left-radius: 0;
     border-top-right-radius: 0
-}
-
-.navbar {
-    position: relative;
-    min-height: 50px;
-    margin-bottom: 20px;
-    border: 1px solid transparent
-}
-
-@media (min-width:768px) {
-    .navbar {
-        border-radius: 4px
-    }
 }
 
 @media (min-width:768px) {
