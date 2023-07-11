@@ -27,13 +27,16 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/product.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- CSS Files -->
+  <link href="assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap/material-bootstrap-wizard.css" rel="stylesheet" />
 </head>
 
 <body>
 
+  <!-- ======= Top Bar ======= -->
   <div id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
       <div class="align-items-center d-none d-md-flex">
@@ -43,7 +46,7 @@
         <i class="bi bi-envelope"></i>info@bhumistha.com
       </div>
       <div class="d-flex align-items-center">
-      Stay Connected: 
+         Stay Connected: 
          &nbsp
          <a href="https://wa.me/918850706988"> <i class="bi bi-whatsapp"></a></i>
        &nbsp
@@ -51,6 +54,7 @@
           &nbsp
             <a href="https://www.facebook.com/profile.php?id=100094780831761&mibextid=ZbWKw"> <i class="bi bi-facebook"></a></i> 
              &nbsp
+
       </div>
     </div>
   </div>
@@ -65,7 +69,7 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto " href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto " href="index.html#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="about.html">About Us</a></li>
 
            <li class="dropdown"><a href="product.html"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
@@ -86,7 +90,7 @@
           <li><a class="nav-link scrollto" href="casestudy.html">Case Studies</a></li>
           <li><a class="nav-link scrollto" href="career.html">Career</a></li>
          
-                     <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
+          <li><a class="nav-link scrollto" href="#">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -96,8 +100,10 @@
     </div>
   </header>
   <!-- End Header -->
-
+  <!-- End Header -->
   <main id="main">
+
+
 
     <!-- ======= Breadcrumbs Section ======= -->
     <section class="breadcrumbs">
@@ -112,124 +118,108 @@
 
 
 
-   <!-- Header Start -->
-    <div class="jumbotron jumbotron-fluid page-header" style="margin-bottom: 20px;">
-        <div class="container text-center py-5">
-            <h1 class="text-white display-3 mt-lg-5">Products</h1>
-            <div class="d-inline-flex align-items-center text-white">
-                
-                <p class="m-0">We source components from the world's top manufacturers,
-ensuring that we use only the highest quality raw materials.</p>
+         <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          
+        </div>
+
+      </div>
+
+   
+
+      <div class="container">
+
+        <div class="row mt-5">
+
+          <div class="">
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box">
+                  <i class="bx bx-map"></i>
+                  <h3>Our Address</h3>
+                  <p>  E18, Sector – 06, Vashi, Navi Mumbai,<br>
+                Maharshtra, India – 400703</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p>info@bhumistha.com</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-phone-call"></i>
+                  <h3>Call Us</h3>
+                  <p>(+91) 8850706988<br>(+91) 8898288085</p>
+                </div>
+              </div>
             </div>
-        </div>
-    </div>
-    <!-- Header End -->
-    <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
 
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-right">
-            <img src="assets/img/about2.jpg" class="img-fluid" alt="">
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h5>PHILOSOPHY</h5>
-            <h2 class="fw-bold">OUR BUSINESS ETHOS</h2>
-            <p>
-              BIS focuses on identifying and addressing the root causes of failures to ensure that targets are met. Some of the common dissatisfactions that BIS has identified and eliminated include the following:
-            </p>
 
-            <p>⮞ Extended payback periods caused by project cost overruns or schedule delays</p>
-            <p>⮞ Inefficient process flow and non-user-friendly operations that negatively impact productivity.</p>
-            <p>⮞ Increased maintenance costs and/or frequency due to equipment issues.</p>
-            <p>⮞ Higher operational costs that ultimately affect the client's competitiveness.</p>
-            <p>⮞ BIS is recognized for its collaborative approach with clients, working closely with
-              their O&M teams to implement solutions and provide assistance at all levels, from
-              the laboratory to the plant floor. This includes adapting processes from batch to
-              continuous systems and scaling up or down as necessary.
-              </p>
-             
-          </div>
+        <!--   <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="7" placeholder="Message" required=""></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div> -->
+
         </div>
-        <br>
-        <div class="container" data-aos="fade-up">
-          <p>Design, Estimation, Procurement, Manufacture, Supply and commission by us Are as follows:</p>
-        
 
-        <table class="table table-bordered">
-            <tr>
-              <th class="px-5 py-3 fs-4">Process systems</th>
-              <th class="px-5 py-3 fs-4">Equipment</th>
-            </tr>
-            <tr>
-              <td class="px-5">Anhydrous/Dry HCl Gas Generation system</td>
-              <td class="txt-color px-5 fw-bold">Graphite block heat exchangers</td>
-            </tr>
-            <tr>
-              <td class="px-5">Acid Regeneration System</td>
-              <td class="px-5 fw-bold">Graphite block heat exchangers</td>
-            </tr>
-            <tr>
-              <td class="px-5">HCl Synthesis Unit</td>
-              <td class="px-5 fw-bold">Falling Film & Rising Film Evaporators</td>
-            </tr>
-            <tr>
-              <td class="px-5">Solvent Recovery System</td>
-              <td class="px-5 fw-bold">Acid Dilution system</td>
-            </tr>
-            <tr>
-              <td class="px-5">Vacuum Ejector systems</td>
-              <td class="px-5 fw-bold">Intermediate Tank & Receiver</td>
-            </tr>
-            <tr>
-              <td class="px-5">HCl Recovery System</td>
-              <td class="px-5 fw-bold">Distillation systems</td>
-            </tr>
-            <tr>
-              <td class="px-5">Bromine Recovery System</td>
-              <td class="px-5 fw-bold">Lined Pipes and Fittings</td>
-            </tr>
-            <tr>
-              <td class="px-5">Batch to continuous Process Systems</td>
-              <td class="px-5 fw-bold">Packed Bed Scrubbers and Systems</td>
-            </tr>
-            <tr>
-              <td class="px-5">Spares for Any make Equipment</td>
-              <td class="px-5 fw-bold">Safety Equipment i.e. Pressure Relief Valve, Rupture Disk etc.</td>
-            </tr>
-        </table>
       </div>
-        <p class="fw-bold">Note: Spares, Hardware & Services for Any Make Systems & Equipments.</p>
-        <p>General Chemical, Bulk Drugs, API Intermediates, specialty chemicals, and Pharma Turnkey projects. Our Strengths:</p>
-      </div>
-      
-    </section><!-- End About Us Section -->
+    </section><!-- End Contact Section -->
+ <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=19.071319475838433, 72.98848084951524&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://connectionsgame.org/">Connections NYT</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
+
+
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
-      <div class="container">
+      <!-- <div class="container">
         <div class="row">
 
-                <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6">
             <div class="footer-info">
               <h3>Bhumistha Infra Services</h3>
               <hr width="50%" />
               <p>
                 We value your goals and
-help make your bold goals a reality.
+                help make your bold goals a reality.
               </p>
-              
+
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="index.html#services">Services</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="casestudy.html">Case Study</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="career.html">Career</a></li>
@@ -255,23 +245,24 @@ help make your bold goals a reality.
             <div class="footer-info">
               <h3>Contact</h3>
               <p>
-                 E18, Sector – 06, Vashi, Navi Mumbai,<br>
+                E18, Sector – 06, Vashi, Navi Mumbai,<br>
                 Maharshtra, India – 400703<br><br>
                 <strong>Phone:</strong> 08850706988 | 8898288085<br>
                 <strong>Email:</strong> info@bhumistha.com<br>
               </p>
-            <div class="social-links mt-3">
+               <div class="social-links mt-3">
               <a href="https://www.facebook.com/people/BhumisthaInfra/100094780831761/?mibextid=ZbWKw" class="facebook"><i class="bx bxl-facebook"></i></a>
               <a href="https://www.linkedin.com/in/m-s-bhumistha-infra-services-02a539274" class="linkedin"><i class="bx bxl-linkedin"></i></a>
               <a href="https://wa.me/918850706988" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
             </div>
             </div>
           </div>
+
         </div>
-      </div>
+      </div> -->
     </div>
 
-    <div class="container">
+      <div class="container">
       <div class="copyright">
         &copy; Copyright <strong><span>Bhumistha Infra Services</span></strong>. All Rights Reserved
       </div>
@@ -282,10 +273,12 @@ help make your bold goals a reality.
                     </p>
       </div>
     </div>
-  </footer><!-- End Footer -->
+  </footer>
+
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -299,5 +292,14 @@ help make your bold goals a reality.
   <script src="assets/js/main.js"></script>
 
 </body>
+<!--   Core JS Files   -->
+<script src="assets/vendor/bootstrap/jquery-2.2.4.min.js" type="text/javascript"></script>
+<script src="assets/vendor/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/vendor/bootstrap/jquery.bootstrap.js" type="text/javascript"></script>
 
+<!--  Plugin for the Wizard -->
+<script src="assets/vendor/bootstrap/material-bootstrap-wizard.js"></script>
+
+<!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
+<script src="assets/vendor/bootstrap/jquery.validate.min.js"></script>
 </html>
