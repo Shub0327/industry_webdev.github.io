@@ -14,7 +14,9 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
@@ -28,27 +30,38 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script> 
+  <script type="text/javascript">
+jQuery(function($) {
+  $(".alphabetsOnly").on("keyup blur", function() {
+    $(this).val($(this).val().replace(/[^a-z]/ig, ''));
+  });
+});
+
+      </script> 
 </head>
 
 <body>
 
- <div id="topbar" class="d-flex align-items-center fixed-top">
+  <div id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
       <div class="align-items-center d-none d-md-flex">
         <i class="bi bi-telephone"></i> 08850706988 | 8898288085
       </div>
-       <div class="align-items-center d-none d-md-flex">
+      <div class="align-items-center d-none d-md-flex">
         <i class="bi bi-envelope"></i>info@bhumistha.com
       </div>
       <div class="d-flex align-items-center">
-      Stay Connected: 
-         &nbsp
-         <a href="https://wa.me/918850706988"> <i class="bi bi-whatsapp"></a></i>
-       &nbsp
-         <a href="https://www.linkedin.com/in/m-s-bhumistha-infra-services-02a539274"> <i class="bi bi-linkedin"></a></i>
-          &nbsp
-            <a href="https://www.facebook.com/profile.php?id=100094780831761&mibextid=ZbWKw"> <i class="bi bi-facebook"></a></i> 
-             &nbsp
+        Stay Connected:
+        &nbsp
+        <a href="https://wa.me/918850706988"> <i class="bi bi-whatsapp"></a></i>
+        &nbsp
+        <a href="https://www.linkedin.com/in/m-s-bhumistha-infra-services-02a539274"> <i class="bi bi-linkedin"></a></i>
+        &nbsp
+        <a href="https://www.facebook.com/profile.php?id=100094780831761&mibextid=ZbWKw"> <i
+            class="bi bi-facebook"></a></i>
+        &nbsp
       </div>
     </div>
   </div>
@@ -61,12 +74,12 @@
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <h1 class="logo me-auto"><a href="index.html">Medicio</a></h1> -->
 
-     <nav id="navbar" class="navbar order-last order-lg-0">
+      <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto " href="index.html">Home</a></li>
           <li><a class="nav-link scrollto" href="about.html">About Us</a></li>
 
-           <li class="dropdown"><a href="product.html
+          <li class="dropdown"><a href="product.html
             "><span>Products</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="Graphite block heat exchangers.html">Graphite block heat exchangers</a></li>
@@ -84,20 +97,21 @@
           <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
           <li><a class="nav-link scrollto" href="casestudy.html">Case Studies</a></li>
           <li><a class="nav-link scrollto" href="career.html">Career</a></li>
-         
-                     <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
+
+          <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="appointment.html" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span> Appointment</a>
+      <a href="appointment.html" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span>
+        Appointment</a>
 
     </div>
   </header>
   <!-- End Header -->
   <main id="main">
 
-  
+
 
     <!-- ======= Breadcrumbs Section ======= -->
     <section class="breadcrumbs">
@@ -121,21 +135,32 @@
           <h2>Make an Appointment</h2>
         </div>
 
-        <form action="forms/appointment.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+        <form action="forms/test.php" method="POST" role="form" class="php-email-form" data-aos="fade-up"
+          data-aos-delay="100">
           <div class="row">
             <div class="col-md-4 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              <input type="text" class="form-control alphabetsOnly" name="name" id="name" placeholder="Your Name" required>
+
             </div>
             <div class="col-md-4 form-group mt-3 mt-md-0">
               <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
             </div>
             <div class="col-md-4 form-group mt-3 mt-md-0">
-              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" required>
+              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" pattern="[0-9]{10}" required>
             </div>
           </div>
           <div class="row">
             <div class="col-md-4 form-group mt-3">
-              <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" required>
+              <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" required>
+              <script language="javascript">
+                var today = new Date();
+                var dd = String(today.getDate()).padStart(2, '0');
+                var mm = String(today.getMonth() + 1).padStart(2, '0');
+                var yyyy = today.getFullYear();
+        
+                today = yyyy + '-' + mm + '-' + dd;
+                $('#date').attr('min',today);
+            </script>
             </div>
             <div class="col-md-4 form-group mt-3">
               <select name="department" id="department" class="form-select">
@@ -147,9 +172,9 @@
                 <option value="Acid Dilution system">Acid Dilution system</option>
                 <option value="Distillation Column">Distillation Column</option>
                 <option value="Lined Pipes & Fittings">Lined Pipes & Fittings</option>
-                 <option value="Packed bed scrubbers">Packed bed scrubbers</option>
-                 <option value="Rupture Disk">Rupture Disk</option> 
-                </select>
+                <option value="Packed bed scrubbers">Packed bed scrubbers</option>
+                <option value="Rupture Disk">Rupture Disk</option>
+              </select>
             </div>
 
           </div>
@@ -172,86 +197,97 @@
   </main><!-- End #main -->
 
 
-<!-- ======= Footer ======= -->
-<footer id="footer">
-  <div class="footer-top">
-    <div class="container">
-      <div class="row">
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
 
-              <div class="col-lg-3 col-md-6">
-          <div class="footer-info">
-            <h3>Bhumistha Infra Services</h3>
-            <hr width="50%" />
-            <p>
-              We value your goals and
-help make your bold goals a reality.
-            </p>
-            
-          </div>
-        </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Bhumistha Infra Services</h3>
+              <hr width="50%" />
+              <p>
+                We value your goals and
+                help make your bold goals a reality.
+              </p>
 
-        <div class="col-lg-3 col-md-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-                      <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="index.html#services">Services</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="casestudy.html">Case Study</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="career.html">Career</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-6 footer-links">
-          <h4>Our Products</h4>
-          <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="products/Graphite block heat exchangers.html">Graphite block heat exchangers</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="products/Impervious Graphite Reactor.html">Web Impervious Graphite Reactor</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="products/Falling Film Absorber.html">Falling Film Absorber</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="products/Falling and Film Evaporators.html">Falling and Film Evaporators</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="products/Acid Dilution system.html">Acid Dilution system</a></li>
-             <li><i class="bx bx-chevron-right"></i> <a href="products/Distillation Column.html">Distillation Column</a></li>
-             <li><i class="bx bx-chevron-right"></i> <a href="products/Lined Pipes & Fittings.html">Lined Pipes & Fittings</a></li>
-               <li><i class="bx bx-chevron-right"></i> <a href="products/Packed bed scrubbers.html">Packed bed scrubbers</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="products/Rupture Disk.html">Rupture Disk</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="footer-info">
-            <h3>Contact</h3>
-            <p>
-               E18, Sector – 06, Vashi, Navi Mumbai,<br>
-              Maharshtra, India – 400703<br><br>
-              <strong>Phone:</strong> 08850706988 | 8898288085<br>
-              <strong>Email:</strong> info@bhumistha.com<br>
-            </p>
-           <div class="social-links mt-3">
-              <a href="https://www.facebook.com/people/BhumisthaInfra/100094780831761/?mibextid=ZbWKw" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="https://www.linkedin.com/in/m-s-bhumistha-infra-services-02a539274" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              <a href="https://wa.me/918850706988" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
             </div>
           </div>
-        </div>
 
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html#services">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="casestudy.html">Case Study</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="career.html">Career</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Products</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="products/Graphite block heat exchangers.html">Graphite
+                  block heat exchangers</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="products/Impervious Graphite Reactor.html">Web Impervious
+                  Graphite Reactor</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="products/Falling Film Absorber.html">Falling Film
+                  Absorber</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="products/Falling and Film Evaporators.html">Falling and
+                  Film Evaporators</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="products/Acid Dilution system.html">Acid Dilution
+                  system</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="products/Distillation Column.html">Distillation
+                  Column</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="products/Lined Pipes & Fittings.html">Lined Pipes &
+                  Fittings</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="products/Packed bed scrubbers.html">Packed bed
+                  scrubbers</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="products/Rupture Disk.html">Rupture Disk</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Contact</h3>
+              <p>
+                E18, Sector – 06, Vashi, Navi Mumbai,<br>
+                Maharshtra, India – 400703<br><br>
+                <strong>Phone:</strong> 08850706988 | 8898288085<br>
+                <strong>Email:</strong> info@bhumistha.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="https://www.facebook.com/people/BhumisthaInfra/100094780831761/?mibextid=ZbWKw"
+                  class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/m-s-bhumistha-infra-services-02a539274" class="linkedin"><i
+                    class="bx bxl-linkedin"></i></a>
+                <a href="https://wa.me/918850706988" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="container">
-    <div class="copyright">
-      &copy; Copyright <strong><span>Bhumistha Infra Services</span></strong>. All Rights Reserved
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Bhumistha Infra Services</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <p class="">&copy;Developed by
+          <a href="https://mail.google.com/mail/u/0/?fs=1&to=shubhammankar2703@gmail.com&tf=cm">Shubham Mankar &</a>
+          <a href="https://mail.google.com/mail/u/0/?fs=1&to=rkmanna11@gmail.com&tf=cm">Rohit Manna</a>
+        </p>
+      </div>
     </div>
-    <div class="credits">
-     <p class="">&copy;Developed by 
-      <a href="https://mail.google.com/mail/u/0/?fs=1&to=shubhammankar2703@gmail.com&tf=cm">Shubham Mankar &</a>
-      <a href="https://mail.google.com/mail/u/0/?fs=1&to=rkmanna11@gmail.com&tf=cm">Rohit Manna</a>
-                  </p>
-    </div>
-  </div>
-</footer><!-- End Footer -->
+  </footer><!-- End Footer -->
 
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
